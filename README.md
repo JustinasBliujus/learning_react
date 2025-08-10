@@ -7,6 +7,9 @@ Each branch in this repository will represent a different project, tutorial, or 
 - **`main` branch** — initial setup and shared configuration.
 - **Other branches** — each branch contains a standalone React project or learning exercise.
 
+- React-tutorial - following a tutorial for a chat bot project.
+- to_do_list - personal project to apply the knowdledge earnt
+
 ## Goals
 - Build a solid understanding of React fundamentals.
 - Learn best practices for structuring and styling React applications.
