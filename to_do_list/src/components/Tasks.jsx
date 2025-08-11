@@ -2,7 +2,7 @@ import Task from './Task'
 
 function Tasks({ tasks, onDelete, }) {
     return(
-        <div>
+        <div className='tasks-container'>
             {tasks.map((task)=>{
                 return (
                     <Task 

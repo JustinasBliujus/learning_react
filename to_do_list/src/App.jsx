@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className='app-container'>
-      <h1>Welcome to the To Do List!</h1>
+      <span className='title-container'>Welcome to the To Do List!</span>
       <Input onAdd={handleAddTask}/>
       <Tasks 
         tasks={tasks}

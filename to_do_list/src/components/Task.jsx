@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './Task.css' 
 
 function Task({ task, onDelete, }) {
     const [checked, setChecked] = useState(false);
@@ -8,12 +9,13 @@ function Task({ task, onDelete, }) {
     }
 
     return (
-        <div>
+        <div className="task-container">
             <input
+                className="task-checkbox"
                 type="checkbox"
                 checked={checked}
                 onChange={handleCheckboxChange}/>
-                <span 
+                <span className="task-text-span"
                     style=
                         {{
                             color: checked ? 'gray' : 'black',
@@ -21,7 +23,10 @@ function Task({ task, onDelete, }) {
                         }}>
                     {task.text}
                 </span>
-            <button onClick={onDelete}>Delete</button>
+            <button 
+                className="delete-button"
+                onClick={onDelete}
+            >Delete</button>
         </div>
     );
 }

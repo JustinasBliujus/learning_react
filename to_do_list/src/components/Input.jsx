@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import './Input.css'
 
 function Input({ onAdd }) {
   const [inputText, setInputText] = useState('');
@@ -15,13 +16,17 @@ function Input({ onAdd }) {
     }
 
   return (
-    <div>
-      <input 
+    <div className='input-container'>
+      <input
+        className='input-field' 
         placeholder="Write Your Task..."
         onChange={(e) => setInputText(e.target.value)}
         value={inputText}
       />
-      <button onClick={addTask}>Add</button>
+      <button 
+        className='add-button'
+        onClick={addTask}
+      >Add</button>
     </div>
   );
 }

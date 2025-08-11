@@ -1,0 +1,32 @@
+.task-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.task-text-span{
+    font-size: smaller;
+    width: 350px;
+    overflow-x: auto;
+}
+.delete-button{
+    padding: 18px;
+    font-size: large;
+    border-radius: 8px;
+    color: #064232;
+    background-color: #F5BABB;
+    margin-left: 10px;
+    border-color: #064232;
+}
+.task-checkbox{
+    width: 35px;
+    height: 35px;
+}
+.task-checkbox {
+    width: 35px;
+    height: 35px;
+    border-color: #568F87;
+}
+.task-checkbox:checked {
+    accent-color: #568F87;
+}

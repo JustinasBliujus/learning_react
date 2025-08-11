@@ -1,0 +1,24 @@
+.input-container{
+    display:flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+.add-button{
+    padding: 18px;
+    font-size: large;
+    border-radius: 8px;
+    color: #FFF5F2;
+    background-color: #568F87;
+    margin-left: 10px;
+    height: fit-content;
+    border-color: #064232;
+}
+
+.input-field{
+    padding: 18px;
+    font-size: large;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+
