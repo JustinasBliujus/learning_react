@@ -16,9 +16,9 @@ Each branch in this repository will represent a different project, tutorial, or 
 - Explore tools and libraries in the React ecosystem.
 
 ## The plan
-- Watch a tutorial with all the basics
-- Read documentation of React
-- Build To Do List Front-End
+- [x] Watch a tutorial with all the basics
+- [x] Read documentation of React
+- [x] Build To Do List Front-End
 - Connect MongoDB to the To Do List
 - Build portfolio website Front-End
 - Connect it to MongoDB and host the website
