@@ -1,4 +1,5 @@
 import Task from './Task'
+import './Tasks.css'
 
 function Tasks({ tasks, onDelete, }) {
     return(
