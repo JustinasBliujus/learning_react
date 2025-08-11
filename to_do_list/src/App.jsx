@@ -1,29 +1,18 @@
 import './App.css'
-import Input from './components/Input'
-import Tasks from './components/Tasks'
-import { useState } from 'react';
+import HomePage from './pages/HomePage'
+import LoginPage from './pages/LoginPage'
+import RegisterPage from './pages/RegisterPage'
+import { Routes, Route } from 'react-router'
 
 function App() {
-  const [tasks,setTasks] = useState([]);
-
-  function handleAddTask(newTask){
-    setTasks((allTasks => [...allTasks,newTask]));
-  }
-
-  function handleDeleteTask(id) {
-    setTasks((allTasks => allTasks.filter(task => task.id !== id)));
-  }
-
-  return (
-    <div className='app-container'>
-      <span className='title-container'>Welcome to the To Do List!</span>
-      <Input onAdd={handleAddTask}/>
-      <Tasks 
-        tasks={tasks}
-        onDelete={handleDeleteTask}
-      />
-    </div>
-  )
+  return <>
+    <Routes>
+      <Route index element={<RegisterPage/>}/>
+      <Route path="Login" element={<LoginPage/>}/>
+      <Route path="Register" element={<RegisterPage/>}/>
+      <Route path="Home" element={<HomePage/>}/>
+    </Routes>
+  </>
 }
 
 export default App
